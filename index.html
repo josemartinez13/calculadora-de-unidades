@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor De Unidades</h1>
+
+        <div class="converter">
+            <h2>Masa</h2>
+            <input type="number" id="massInput" placeholder="Valor">
+            <select id="massFrom">
+                <option value="mg">Miligramo</option>
+                <option value="g">Gramo</option>
+                <option value="kg">Kilogramo</option>
+                <option value="ton">Tonelada</option>
+                <option value="lb">Libra</option>
+                <option value="oz">Onza</option>
+            </select>
+            <span>a</span>
+            <select id="massTo">
+                <option value="mg">Miligramo</option>
+                <option value="g">Gramo</option>
+                <option value="kg">Kilogramo</option>
+                <option value="ton">Tonelada</option>
+                <option value="lb">Libra</option>
+                <option value="oz">Onza</option>
+            </select>
+            <button onclick="convertMass()">Convertir</button>
+            <p id="massResult"></p>
+        </div>
+
+        <div class="converter">
+            <h2>Longitud</h2>
+            <input type="number" id="lengthInput" placeholder="Valor">
+            <select id="lengthFrom">
+                <option value="mm">Milimetro</option>
+                <option value="cm">Centimetro</option>
+                <option value="m">Metro</option>
+                <option value="km">Kilometro</option>
+                <option value="yd">Yarda</option>
+                <option value="mi">Milla</option>
+                <option value="ft">Pie</option>
+                <option value="in">Pulgada</option>
+            </select>
+            <span>a</span>
+            <select id="lengthTo">
+                <option value="mm">Milimetro</option>
+                <option value="cm">Centimetro</option>
+                <option value="m">Metro</option>
+                <option value="km">Kilometro</option>
+                <option value="yd">Yarda</option>
+                <option value="mi">Milla</option>
+                <option value="ft">Pie</option>
+                <option value="in">Pulgada</option>
+            </select>
+            <button onclick="convertLength()">Convertir</button>
+            <p id="lengthResult"></p>
+        </div>
+
+        <div class="converter">
+            <h2>Velocidad</h2>
+            <input type="number" id="speedInput" placeholder="Valor">
+            <select id="speedFrom">
+                <option value="mps">Metros por segundo</option>
+                <option value="kpm">Kilometros por minuto</option>
+                <option value="kph">Kilometros por hora</option>
+                <option value="mph">Millas por hora</option>
+            </select>
+            <span>a</span>
+            <select id="speedTo">
+                <option value="mps">Metros por segundo</option>
+                <option value="kpm">Kilometros por minuto</option>
+                <option value="kph">Kilometros por hora</option>
+                <option value="mph">Millas por hora</option>
+            </select>
+            <button onclick="convertSpeed()">Convertir</button>
+            <p id="speedResult"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
